@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/OnlyChicx/register-login/issues"
   },
-  "homepage": "https://github.com/OnlyChicx/register-login#readme"
+  "homepage": "https://github.com/OnlyChicx/register-login#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5",
+    "nodemailer": "^6.3.1"
+  }
 }
