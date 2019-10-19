@@ -1,0 +1,24 @@
+{
+  "name": "register-login",
+  "version": "1.0.0",
+  "description": "用户登陆注册和邮箱验证",
+  "main": "app.js",
+  "scripts": {
+    "test": "chic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnlyChicx/register-login.git"
+  },
+  "keywords": [
+    "register",
+    "login",
+    "mail"
+  ],
+  "author": "onlychic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnlyChicx/register-login/issues"
+  },
+  "homepage": "https://github.com/OnlyChicx/register-login#readme"
+}
