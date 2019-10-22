@@ -25,7 +25,7 @@ router.post('/reg', (req, res) => {
         res.send({ err: 0, msg: '注册成功' })
       })
       .catch((err) => {
-        res.send({ err: -1, msg: 'no ok' })
+        res.send({ err: -1, msg: 'no ok!' })
       })
   } else {
     res.send({ err: -3, msg: '请输入用户名或密码' })
