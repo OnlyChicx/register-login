@@ -1,0 +1,361 @@
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+body {
+  width: 10rem;
+  margin: 0 auto;
+}
+.background {
+  background-color: #D668AD;
+  height: 2rem;
+  width: 10rem;
+  position: fixed;
+  z-index: 10;
+}
+.content {
+  width: 100%;
+  padding: 0 0.46666667rem;
+  box-sizing: border-box;
+}
+.fixedBox {
+  height: 0.84rem;
+  width: 10rem;
+  position: fixed;
+  top: 0.85333333rem;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+.fixedBox .search {
+  height: 100%;
+  width: 8.2rem;
+  border-radius: 0.06666667rem;
+  background-color: rgba(240, 197, 225, 0.7);
+  border: none;
+  margin-left: 0.53333333rem;
+  padding-left: 0.74666667rem;
+  padding-right: 0.53333333rem;
+  box-sizing: border-box;
+  font-size: 0.32rem;
+  color: white;
+  font-weight: 100;
+  position: relative;
+}
+.fixedBox .search::placeholder {
+  color: white;
+  font-weight: 100;
+}
+.fixedBox .search:focus {
+  outline: none;
+}
+.fixedBox::before {
+  content: '';
+  width: 0.29333333rem;
+  height: 0.29333333rem;
+  display: block;
+  background: url('../img/img3@2x.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0.26666667rem;
+  left: 0.8rem;
+}
+.fixedBox .microphone {
+  margin-left: -0.53333333rem;
+  margin-right: 0.66666667rem;
+  width: 0.21333333rem;
+  height: 0.32rem;
+  z-index: 10;
+}
+.fixedBox .message {
+  width: 0.33333333rem;
+  height: 0.41333333rem;
+}
+.fixedBox .message + div {
+  position: relative;
+}
+.fixedBox .message + div::after {
+  content: '';
+  width: 0.09333333rem;
+  height: 0.09333333rem;
+  display: block;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -0.16rem;
+  left: -0.13333333rem;
+}
+.activity {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+}
+.activity img {
+  width: 100%;
+  vertical-align: middle;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav .box {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav .box .sprit {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  background: url('../img/img16@2x.png') no-repeat;
+  background-size: 8.64rem;
+  margin-bottom: 0.26666667rem;
+  margin-top: 0.33333333rem;
+}
+nav .box .titleCN {
+  font-size: 0.32rem;
+  font-weight: 500;
+  line-height: 0.66666667rem;
+}
+nav .box .titleEN {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #A3A3A3;
+}
+nav .list .sprit {
+  background-position: 0 0;
+}
+nav .free .sprit {
+  background-position: -1.86666667rem 0;
+}
+nav .assemble .sprit {
+  background-position: -3.73333333rem 0;
+}
+nav .coupon .sprit {
+  background-position: -5.6rem 0;
+}
+nav .signin .sprit {
+  background-position: -7.46666667rem 0;
+}
+nav .integral .sprit {
+  background-position: 0 -1.06666667rem;
+}
+nav .member .sprit {
+  background-position: -1.86666667rem -1.06666667rem;
+}
+nav .detailed .sprit {
+  background-position: -3.73333333rem -1.06666667rem;
+}
+nav .brand .sprit {
+  background-position: -5.6rem -1.06666667rem;
+}
+nav .more .sprit {
+  background-position: -7.46666667rem -1.06666667rem;
+}
+.newUser {
+  width: 100%;
+}
+.newUser img {
+  width: 100%;
+  vertical-align: middle;
+}
+.everyDay {
+  width: 100%;
+  margin-bottom: 0.58666667rem;
+}
+.everyDay .timeTitle span:nth-of-type(1) {
+  margin-left: 0.33333333rem;
+  margin-right: 0.2rem;
+}
+.everyDay .timeTitle .maohao {
+  margin: 0 0.04rem;
+}
+.everyDay .timeTitle .hour,
+.everyDay .timeTitle .minute,
+.everyDay .timeTitle .second {
+  background-color: black;
+  color: white;
+  padding: 0.04rem;
+  box-sizing: border-box;
+  font-size: 0.26666667rem;
+  font-weight: 500;
+}
+.everyDay .proList {
+  width: 100%;
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.everyDay .proList .everyPro {
+  width: 1.8rem;
+  height: 100%;
+  background: #D365A9;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.everyDay .proList .everyPro::after {
+  content: '';
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #D365A9;
+  position: absolute;
+  top: 0;
+  right: -0.2rem;
+  z-index: -100;
+}
+.everyDay .proList .everyPro span {
+  font-size: 0.26666667rem;
+  color: white;
+  line-height: 0.4rem;
+}
+.festival {
+  width: 100%;
+}
+.festival img {
+  width: 100%;
+  vertical-align: middle;
+}
+.hot {
+  width: 100%;
+}
+.hot .hotTitle span {
+  position: relative;
+}
+.hot .hotTitle span::after {
+  content: '';
+  display: block;
+  width: 0.26666667rem;
+  height: 0.26666667rem;
+  background-color: black;
+  transform: rotate(45deg) translate(0, -50%);
+  position: absolute;
+  right: -0.4rem;
+  top: 50%;
+}
+.hot .hotTitle span::before {
+  content: '';
+  display: block;
+  width: 0.26666667rem;
+  height: 0.26666667rem;
+  background-color: black;
+  transform: rotate(45deg) translate(0, -50%);
+  position: absolute;
+  right: -0.93333333rem;
+  top: 50%;
+}
+.hot .updateTime span {
+  color: #D769AD;
+  font-size: 0.26666667rem;
+}
+.hot .hotProlist {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0.26666667rem;
+}
+.hot .hotProlist .hotPro {
+  width: 2.66666667rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hot .hotProlist .hotPro .proImg {
+  width: 100%;
+  border-radius: 0.13333333rem;
+  margin-bottom: 0.13333333rem;
+}
+.hot .hotProlist .hotPro span {
+  display: block;
+  font-size: 0.28rem;
+  color: #333333;
+  height: 0.8rem;
+  line-height: 0.4rem;
+}
+.hot .hotProlist .hotPro span:nth-of-type(2) {
+  color: #FF464C;
+  height: 0.33333333rem;
+  line-height: 0.33333333rem;
+}
+.hot .hotProlist .hotPro .buyImg {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0.13333333rem;
+  right: 0;
+}
+.foot {
+  height: 1.2rem;
+  width: 10rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.foot .toPage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot .toPage span {
+  font-size: 0.29333333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foot .toPage span::before {
+  content: '';
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  display: block;
+  background: url('../img/img7@2x.png') no-repeat;
+  background-size: 5.14666667rem;
+  margin: 0.13333333rem 0;
+}
+.foot .toPage .index::before {
+  background-position: 0 0;
+}
+.foot .toPage .type::before {
+  background-position: -1.14666667rem 0;
+}
+.foot .toPage .find::before {
+  background-position: -2.32rem 0;
+}
+.foot .toPage .shopcar::before {
+  background-position: -3.46666667rem 0;
+}
+.foot .toPage .mine::before {
+  background-position: -4.66666667rem 0;
+}
+.empty {
+  width: 100%;
+  height: 1.33333333rem;
+}
+/* 
+  ------------公共类------------
+  */
+.title {
+  width: 100%;
+  height: 1.46666667rem;
+  display: flex;
+  align-items: center;
+}
+.title span {
+  display: inline-block;
+  font-size: 0.42666667rem;
+  font-weight: bold;
+  color: black;
+}

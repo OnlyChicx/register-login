@@ -1,0 +1,456 @@
+@no: 10;
+@rem: 750rem/@no;
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 750px/@no!important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 320px/@no!important;
+  }
+}
+
+body {
+  width: 750/@rem;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: #D668AD;
+  height: 150/@rem;
+  width: 750/@rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.content {
+  width: 100%;
+  padding: 0 35/@rem;
+  box-sizing: border-box;
+}
+
+.fixedBox {
+  height: 63/@rem;
+  width: 750/@rem;
+  position: fixed;
+  top:64/@rem;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+
+  .search {
+    height: 100%;
+    width: 615/@rem;
+    border-radius: 5/@rem;
+    background-color: rgba(240, 197, 225,.7);
+    border: none;
+    margin-left: 40/@rem;
+    padding-left: 56/@rem;
+    padding-right: 40/@rem;
+    box-sizing: border-box;
+    font-size: 24/@rem;
+    color: white;
+    font-weight: 100;
+    position: relative;
+
+    &::placeholder {
+      color: white;
+      font-weight: 100;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 22/@rem;
+    height: 22/@rem;
+    display: block;
+    background: url('../img/img3@2x.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:20/@rem;
+    left: 60/@rem;
+  }
+
+  .microphone {
+    margin-left: -40/@rem;
+    margin-right: 50/@rem;
+    width: 16/@rem;
+    height: 24/@rem;
+    z-index: 10;
+  }
+
+  .message {
+    width: 25/@rem;
+    height: 31/@rem;
+  }
+
+  .message+div {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 7/@rem;
+      height: 7/@rem;
+      display: block;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      top: -12/@rem;
+      left: -10/@rem;
+    }
+  }
+}
+
+.activity {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+nav {
+  @pox: -140/@rem;
+  @poy: -80/@rem;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sprit {
+      width: 80/@rem;
+      height: 80/@rem;
+      background: url('../img/img16@2x.png') no-repeat;
+      background-size: 648/@rem;
+      margin-bottom: 20/@rem;
+      margin-top: 25/@rem;
+    }
+
+    .titleCN {
+      font-size: 24/@rem;
+      font-weight: 500;
+      line-height: 50/@rem;
+    }
+
+    .titleEN {
+      font-size: 18/@rem;
+      font-weight: 200;
+      color: #A3A3A3;
+    }
+  }
+
+  .list .sprit {
+    background-position: 0 0;
+  }
+  
+  .free .sprit {
+    background-position: @pox*1 0;
+  }
+
+  .assemble .sprit {
+    background-position: @pox*2 0;
+  }
+
+  .coupon .sprit {
+    background-position: @pox*3 0;
+  }
+
+  .signin .sprit {
+    background-position: @pox*4 0;
+  }
+
+  .integral .sprit {
+    background-position: 0 @poy;
+  }
+
+  .member .sprit {
+    background-position: @pox*1 @poy;
+  }
+
+  .detailed .sprit {
+    background-position: @pox*2 @poy;
+  }
+
+  .brand .sprit {
+    background-position: @pox*3 @poy;
+  }
+
+  .more .sprit {
+    background-position: @pox*4 @poy;
+  }
+}
+
+.newUser {
+  width: 100%;
+
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.everyDay {
+  width: 100%;
+  margin-bottom: 44/@rem;
+
+  // 每日秒杀计时器
+  .timeTitle {
+  
+    span {
+  
+      &:nth-of-type(1) {
+        margin-left: 25/@rem;
+        margin-right: 15/@rem;
+      }
+    }
+  
+    .maohao {
+      margin: 0 3/@rem;
+    }
+  
+    .hour,.minute,.second {
+      background-color: black;
+      color: white;
+      padding: 3/@rem;
+      box-sizing: border-box;
+      font-size: 20/@rem;
+      font-weight: 500;
+    }
+  }
+
+    // 每日秒杀商品
+    .proList {
+      width: 100%;
+      height: 135/@rem;
+      display: flex;
+      justify-content: space-between;
+
+      .everyPro {
+        width: 135/@rem;
+        height: 100%;
+        background: #D365A9;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        &::after {
+          @size: 30/@rem;
+
+          content: '';
+          display: block;
+          width: @size;
+          height: @size;
+          border-radius: 50%;
+          background: #D365A9;
+          position: absolute;
+          top: 0;
+          right: -@size/2;
+          z-index: -100;
+        }
+
+        span {
+          font-size: 20/@rem;
+          color: white;
+          line-height: 30/@rem;
+        }
+      }
+    }
+
+  }
+  
+  // 38节日促销图
+  .festival {
+    width: 100%;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  // 每日爆款
+  .hot {
+    width: 100%;
+
+    .hotTitle {
+
+      span {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 20/@rem;
+          height: 20/@rem;
+          background-color: black;
+          transform: rotate(45deg) translate(0,-50%);
+          position: absolute;
+          right: -30/@rem;
+          top: 50%;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          width: 20/@rem;
+          height: 20/@rem;
+          background-color: black;
+          transform: rotate(45deg) translate(0,-50%);
+          position: absolute;
+          right: -70/@rem;
+          top: 50%;
+        }
+      }
+    }
+
+    .updateTime {
+
+      span {
+        color: #D769AD;
+        font-size: 20/@rem;
+      }
+    }
+
+    .hotProlist {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20/@rem;
+
+      .hotPro {
+        width: 200/@rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .proImg {
+          width: 100%;
+          border-radius: 10/@rem;
+          margin-bottom: 10/@rem;
+        }
+
+        span {
+          display: block;
+          font-size: 21/@rem;
+          color: #333333;
+          height: 60/@rem;
+          line-height: 30/@rem;
+
+          &:nth-of-type(2) {
+            color: #FF464C;
+            height: 25/@rem;
+            line-height: 25/@rem;
+          }
+        }
+
+        .buyImg {
+          width: 40/@rem;
+          height: 40/@rem;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 10/@rem;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  // 底部导航栏
+  .foot {
+    height: 90/@rem;
+    width: 750/@rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+
+    .toPage {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        font-size: 22/@rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+          content: '';
+          width: 40/@rem;
+          height: 40/@rem;
+          display: block;
+          background: url('../img/img7@2x.png') no-repeat;
+          background-size: 386/@rem;
+          margin: 10/@rem 0;
+        }
+      }
+
+      .index::before {
+        background-position: 0 0;
+      }
+
+      .type::before {
+        background-position: -86/@rem 0;
+      }
+
+      .find::before {
+        background-position: -174/@rem 0;
+      }
+
+      .shopcar::before {
+        background-position: -260/@rem 0;
+      }
+
+      .mine::before {
+        background-position: -350/@rem 0;
+      }
+
+    }
+  }
+
+  // 底部占位盒子
+  .empty {
+    width: 100%;
+    height: 100/@rem;
+  }
+
+
+
+  /* 
+  ------------公共类------------
+  */
+
+  // 粗体标题
+  .title {
+    width: 100%;
+    height: 110/@rem;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      font-size: 32/@rem;
+      font-weight: bold;
+      color: black;
+    }
+  }
